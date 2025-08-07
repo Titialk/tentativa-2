@@ -1,0 +1,112 @@
+/*
+    Nova Paleta de Cores (Tecnológica)
+    - Fundo: #121212 (Preto Escuro)
+    - Destaque Ciano: #00bcd4
+    - Cinza de Contraste: #607d8b
+    - Texto Principal: #e0e0e0 (Cinza Claro)
+*/
+
+body {
+    font-family: 'Consolas', 'Courier New', monospace;
+    background-color: #121212;
+    color: #e0e0e0;
+    margin: 0;
+    line-height: 1.6;
+}
+
+.header {
+    background: #121212;
+    color: #00bcd4;
+    text-align: center;
+    padding: 3rem 1rem;
+    border-bottom: 2px solid #607d8b;
+}
+
+.header h1 {
+    font-size: 3em;
+    margin-bottom: 0.5rem;
+    text-shadow: 0 0 10px #00bcd4;
+}
+
+.header p {
+    font-style: normal;
+    color: #e0e0e0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    display: grid;
+    gap: 2rem;
+}
+
+.card {
+    background-color: rgba(96, 125, 139, 0.2);
+    border: 1px solid #00bcd4;
+    border-radius: 5px;
+    padding: 2rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+}
+
+.card h2 {
+    color: #00bcd4;
+    border-bottom: 2px solid #607d8b;
+    padding-bottom: 0.5rem;
+    margin-top: 0;
+}
+
+.character-list,
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.character-item {
+    text-align: center;
+}
+
+.character-item img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #00bcd4;
+    transition: transform 0.3s ease-in-out;
+}
+
+.character-item img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px #00bcd4;
+}
+
+.gallery img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 5px;
+    border: 2px solid #607d8b;
+    transition: transform 0.3s ease-in-out;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px #607d8b;
+}
+
+.footer {
+    text-align: center;
+    padding: 1.5rem 1rem;
+    background-color: #121212;
+    border-top: 1px solid #607d8b;
+    margin-top: 2rem;
+}
+
+@media (max-width: 768px) {
+    .header h1 {
+        font-size: 2em;
+    }
+}
